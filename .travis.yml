@@ -2,7 +2,7 @@ language: php
 
 php:
   - 7.2
-  - 7.4
+  - 7.3
 
 env:
   global:
@@ -30,7 +30,7 @@ before_script:
 script:
   - if [[ $DEFAULT == 1 ]]; then vendor/bin/phpunit; fi
 
-  - if [[ $CHECKS == 1 ]]; then composer phpstan-setup && composer phpstan; fi
+  # - if [[ $CHECKS == 1 ]]; then composer phpstan-setup && composer phpstan; fi
   - if [[ $CHECKS == 1 ]]; then composer cs-check; fi
 
   - if [[ $CODECOVERAGE == 1 ]]; then vendor/bin/phpunit --coverage-clover=clover.xml || true; fi
