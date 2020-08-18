@@ -23,7 +23,7 @@ composer require atelfoto/sluggable
 
  ```php
  //src/Model/Table/model.php
- $this->addBehavior('Admin.Sluggable');
+ $this->addBehavior('Sluggable.Sluggable');
  ```
 
 
