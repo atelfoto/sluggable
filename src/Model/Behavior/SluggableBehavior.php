@@ -6,9 +6,9 @@ use Cake\Datasource\EntityInterface;
 use Cake\Event\Event;
 use Cake\ORM\Behavior;
 use Cake\ORM\Entity;
+use Cake\ORM\Table;
 use Cake\Utility\Text;
 
-use Cake\ORM\Table;
 
 /**
  * Sluggable behavior
@@ -28,7 +28,7 @@ class SluggableBehavior extends Behavior
 
     /**
      * slug description
-     * @param  Entity $entity [description]
+     * @param  Entity $entity [The entity that is going to be a slug]
      * @return void
      */
     public function slug(Entity $entity)
@@ -45,8 +45,8 @@ class SluggableBehavior extends Behavior
 
     /**
      * [beforeSave description]
-     * @param  Event           $event   [description]
-     * @param  EntityInterface $entity  [description]
+     * @param  Event           $event   [The beforeSave event that was fired.]
+     * @param  EntityInterface $entity  [The entity that is going to be saved]
      * @param  ArrayObject     $options [description]
      * @return void
      */

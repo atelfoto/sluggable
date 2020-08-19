@@ -6,7 +6,8 @@
     "keywords": [
         "cakephp",
         "plugin",
-        "Behavior"
+        "Behavior",
+        "slug"
     ],
     "require": {
         "cakephp/cakephp": "^3.5"
