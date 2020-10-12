@@ -35,11 +35,12 @@ class SluggableBehavior extends Behavior
         $config = $this->getConfig();
         $value = $entity->get($config['field']);
         $value = str_replace(
-            ['é', 'è', 'ê', 'ë', 'à', 'â', 'î', 'ï', 'ô', 'ù', 'û', 'ç'],
-            ['e', 'e', 'e', 'e', 'a', 'a', 'i', 'i', 'o', 'u', 'u', 'c'],
+            ['é', 'è', 'ê', 'ë', 'à', 'â', 'î', 'ï', 'ô', 'ù', 'û', 'ç', 'á', 'í', 'ó', 'ú', 'ñ'],
+            ['e', 'e', 'e', 'e', 'a', 'a', 'i', 'i', 'o', 'u', 'u', 'c', 'a', 'i', 'o', 'u', 'n'],
             $value
         );
-        $entity->set($config['slug'], strtolower(Text::slug($value, $config['replacement'])));
+        $value = strtolower(Text::slug($value, $config['replacement']));
+        $entity->set($config['slug'], substr($value, 0, 100));
     }
 
     /**
