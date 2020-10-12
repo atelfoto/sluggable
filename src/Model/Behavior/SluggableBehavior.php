@@ -9,7 +9,6 @@ use Cake\ORM\Entity;
 use Cake\ORM\Table;
 use Cake\Utility\Text;
 
-
 /**
  * Sluggable behavior
  */
