@@ -1,4 +1,5 @@
 <?php
+
 namespace Sluggable\Model\Behavior;
 
 use ArrayObject;
@@ -6,7 +7,7 @@ use Cake\Datasource\EntityInterface;
 use Cake\Event\Event;
 use Cake\ORM\Behavior;
 use Cake\ORM\Entity;
-use Cake\ORM\Table;
+use Cake\ORM\Query;
 use Cake\Utility\Text;
 
 /**
@@ -27,7 +28,8 @@ class SluggableBehavior extends Behavior
 
     /**
      * slug description
-     * @param  Entity $entity [The entity that is going to be a slug]
+     *
+     * @param \Cake\ORM\Entity $entity The entity that is going to be a slug
      * @return void
      */
     public function slug(Entity $entity)
@@ -44,10 +46,22 @@ class SluggableBehavior extends Behavior
     }
 
     /**
+     * Undocumented function
+     *
+     * @param \Cake\ORM\Query $query query
+     * @param array $options options
+     * @return true
+     */
+    public function findSlug(Query $query, array $options)
+    {
+        return $query->where(['slug' => $options['slug']]);
+    }
+
+    /**
      * [beforeSave description]
-     * @param  Event           $event   [The beforeSave event that was fired.]
-     * @param  EntityInterface $entity  [The entity that is going to be saved]
-     * @param  ArrayObject     $options [description]
+     * @param \Cake\Event\Event $event The beforeSave event that was fired
+     * @param \Cake\Datasource\EntityInterface $entity  [The entity that is going to be saved]
+     * @param \ArrayObject $options [description]
      * @return void
      */
     public function beforeSave(Event $event, EntityInterface $entity, ArrayObject $options)
