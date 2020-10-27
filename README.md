@@ -14,6 +14,8 @@
 - [2. Installation](#2-installation)
 - [3. Configuration](#3-configuration)
   - [3.1. Model Table](#31-model-table)
+  - [3.2. Controller](#32-controller)
+  - [3.3. Route](#33-route)
 
 
 ## 1. Requirements
@@ -65,10 +67,36 @@ composer require atelfoto/sluggable
 - **Replacement**
   - Default: `-`
   - The replacement characters used to replace space:
+
     ```php
     $this->addBehavior('Sluggable.Sluggable', [
         'replacement' => '_'
     ]);
+    ```
+### 3.2. Controller
+- To use in a finder:
+
+  ```php
+  public function view($value = null)
+    {
+        $query = $this->Models->findBySlug($value)->firstOrFail();
+        $this->set(compact('query'));
+    }
+    ```
+### 3.3. Route
+- In the Route
+
+  ```php
+  //config/routes
+
+  $routes->connect(
+        '/the title/:slug',
+        ['controller' => 'YourController', "action" => "view"],
+        [
+            "_name" => "the title",
+            "pass" => ['slug'],
+        ]
+    );
     ```
 
 
