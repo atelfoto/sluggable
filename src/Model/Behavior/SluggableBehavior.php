@@ -46,18 +46,6 @@ class SluggableBehavior extends Behavior
     }
 
     /**
-     * Undocumented function
-     *
-     * @param \Cake\ORM\Query $query query
-     * @param array $options options
-     * @return true
-     */
-    public function findSlug(Query $query, array $options)
-    {
-        return $query->where(['slug' => $options['slug']]);
-    }
-
-    /**
      * [beforeSave description]
      * @param \Cake\Event\Event $event The beforeSave event that was fired
      * @param \Cake\Datasource\EntityInterface $entity  [The entity that is going to be saved]
