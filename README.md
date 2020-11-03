@@ -1,4 +1,4 @@
-# Plugin Sluggable  for CakePHP 3 <!-- omit in toc -->
+# Plugin Sluggable  for CakePHP 4 <!-- omit in toc -->
 
 [![Build Status](https://api.travis-ci.org/atelfoto/sluggable.png?branch=master)](https://travis-ci.org/atelfoto/sluggable)
 [![License](https://poser.pugx.org/atelfoto/sluggable/license.svg)](//packagist.org/packages/atelfoto/sluggable)
@@ -19,7 +19,7 @@
 
 
 ## 1. Requirements
-- cakephp 3.x
+- cakephp 4.x
 ## 2. Installation
 
 You can install this plugin into your CakePHP application using [composer](https://getcomposer.org).
