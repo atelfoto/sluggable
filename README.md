@@ -5,9 +5,8 @@
 [![Latest Stable Version](https://poser.pugx.org/atelfoto/sluggable/v/stable.svg)](//packagist.org/packages/atelfoto/sluggable)
 ![Packagist PHP Version Support (specify version)](https://img.shields.io/packagist/php-v/cakephp/cakephp/4.1.1?color=green&logo=cakephp)
 ![GitHub repo size](https://img.shields.io/github/repo-size/atelfoto/sluggable?color=red&logo=cakephp)
-[![codecov](https://codecov.io/gh/atelfoto/sluggable/branch/master/graph/badge.svg)](https://codecov.io/gh/atelfoto/sluggable)
 [![Code Qualité](https://scrutinizer-ci.com/g/atelfoto/sluggable/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/atelfoto/sluggable/?branch=master)
-[![Coverage Status](https://coveralls.io/repos/github/atelfoto/sluggable/badge.svg?branch=master)](https://coveralls.io/github/atelfoto/sluggable?branch=master)
+![PHP Composer](https://github.com/atelfoto/sluggable/workflows/PHP%20Composer/badge.svg)
 
 
 - [1. Requirements](#1-requirements)
@@ -19,7 +18,7 @@
 
 
 ## 1. Requirements
-- cakephp 4.x
+- cakephp ^4.x
 ## 2. Installation
 
 You can install this plugin into your CakePHP application using [composer](https://getcomposer.org).
