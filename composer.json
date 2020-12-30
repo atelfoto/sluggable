@@ -16,7 +16,6 @@
         "cakephp/orm": "^4.0.0"
     },
     "require-dev": {
-        "cakephp/cakephp": "^4.0",
         "phpunit/phpunit": "^8.5|^9.3",
         "cakephp/cakephp-codesniffer": "^3.0"
     },
