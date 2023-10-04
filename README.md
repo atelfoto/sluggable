@@ -1,4 +1,4 @@
-# Plugin Sluggable  for CakePHP 5 `<!-- omit in toc -->`
+# Plugin Sluggable  for CakePHP 5 <!-- omit in toc -->
 
 [![Build Status](https://api.travis-ci.com/atelfoto/sluggable.svg?branch=master)](https://travis-ci.org/atelfoto/sluggable)
 [![License](https://poser.pugx.org/atelfoto/sluggable/license.svg)](//packagist.org/packages/atelfoto/sluggable)
