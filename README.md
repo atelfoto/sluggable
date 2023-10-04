@@ -1,4 +1,4 @@
-# Plugin Sluggable  for CakePHP 4 <!-- omit in toc -->
+# Plugin Sluggable  for CakePHP 5 `<!-- omit in toc -->`
 
 [![Build Status](https://api.travis-ci.org/atelfoto/sluggable.png?branch=master)](https://travis-ci.org/atelfoto/sluggable)
 [![License](https://poser.pugx.org/atelfoto/sluggable/license.svg)](//packagist.org/packages/atelfoto/sluggable)
@@ -9,7 +9,6 @@
 [![Code Qualité](https://scrutinizer-ci.com/g/atelfoto/sluggable/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/atelfoto/sluggable/?branch=master)
 [![Coverage Status](https://coveralls.io/repos/github/atelfoto/sluggable/badge.svg?branch=master)](https://coveralls.io/github/atelfoto/sluggable?branch=master)
 
-
 - [1. Requirements](#1-requirements)
 - [2. Installation](#2-installation)
 - [3. Configuration](#3-configuration)
@@ -17,9 +16,10 @@
   - [3.2. Controller](#32-controller)
   - [3.3. Route](#33-route)
 
-
 ## 1. Requirements
+
 - cakephp 4.x
+
 ## 2. Installation
 
 You can install this plugin into your CakePHP application using [composer](https://getcomposer.org).
@@ -29,6 +29,7 @@ The recommended way to install composer packages is:
 ```
 composer require atelfoto/sluggable
 ```
+
 - or  add it in the composer.json
 
 ```json
@@ -37,14 +38,17 @@ composer require atelfoto/sluggable
 },
 ```
 
-- And in a Table in ```initialize();``` add this line:
+- And in a Table in ``initialize();`` add this line:
 
- ```php
+```php
  //src/Model/Table/model.php
  $this->addBehavior('Sluggable.Sluggable');
- ```
+```
+
 ## 3. Configuration
+
 ### 3.1. Model Table
+
 - **Field**
   - Default: _name_
   - The field to slug
@@ -73,7 +77,9 @@ composer require atelfoto/sluggable
         'replacement' => '_'
     ]);
     ```
+
 ### 3.2. Controller
+
 - To use in a finder:
 
   ```php
@@ -82,8 +88,10 @@ composer require atelfoto/sluggable
         $query = $this->Models->findBySlug($value)->firstOrFail();
         $this->set(compact('query'));
     }
-    ```
+  ```
+
 ### 3.3. Route
+
 - In the Route
 
   ```php
@@ -97,6 +105,4 @@ composer require atelfoto/sluggable
             "pass" => ['slug'],
         ]
     );
-    ```
-
-
+  ```
