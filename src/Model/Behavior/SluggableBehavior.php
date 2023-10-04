@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace Sluggable\Model\Behavior;
@@ -19,9 +20,9 @@ class SluggableBehavior extends Behavior
     /**
      * Default configuration.
      *
-     * @var array
+     * @var array<string, mixed>
      */
-    protected $_defaultConfig = [
+    protected array $_defaultConfig = [
         'field' => 'name',
         'slug' => 'slug',
         'replacement' => '-',
