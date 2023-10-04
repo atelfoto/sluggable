@@ -1,4 +1,4 @@
-# Plugin Sluggable  for CakePHP 5 <!-- omit in toc -->
+# Plugin Sluggable  for CakePHP 5 `<!-- omit in toc -->`
 
 [![Build Status](https://api.travis-ci.com/atelfoto/sluggable.svg?branch=master)](https://travis-ci.org/atelfoto/sluggable)
 [![License](https://poser.pugx.org/atelfoto/sluggable/license.svg)](//packagist.org/packages/atelfoto/sluggable)
@@ -7,6 +7,7 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/atelfoto/sluggable?color=red&logo=cakephp)
 [![Code Qualité](https://scrutinizer-ci.com/g/atelfoto/sluggable/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/atelfoto/sluggable/?branch=master)
 ![PHP Composer](https://github.com/atelfoto/sluggable/workflows/PHP%20Composer/badge.svg)
+[![codecov](https://codecov.io/gh/atelfoto/sluggable/graph/badge.svg?token=GjzNgtbQVH)](https://codecov.io/gh/atelfoto/sluggable)
 
 - [1. Requirements](#1-requirements)
 - [2. Installation](#2-installation)
