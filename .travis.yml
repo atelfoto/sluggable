@@ -1,8 +1,8 @@
 language: php
 
 php:
-  - 7.2
-  - 7.3
+  - 8.2
+  - 8.1
 
 env:
   global:
@@ -12,13 +12,13 @@ matrix:
   fast_finish: true
 
   include:
-    - php: 7.2
+    - php: 8.2
       env: PREFER_LOWEST=1
 
-    - php: 7.3
+    - php: 8.2
       env: CHECKS=1 DEFAULT=0
 
-    - php: 7.3
+    - php: 8.2
       env: CODECOVERAGE=1 DEFAULT=0
 
 before_script:
