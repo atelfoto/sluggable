@@ -1,6 +1,6 @@
 # Plugin Sluggable  for CakePHP 5 `<!-- omit in toc -->`
 
-[![Build Status](https://api.travis-ci.org/atelfoto/sluggable.png?branch=master)](https://travis-ci.org/atelfoto/sluggable)
+[![Build Status](https://api.travis-ci.com/atelfoto/sluggable.svg?branch=master)](https://travis-ci.org/atelfoto/sluggable)
 [![License](https://poser.pugx.org/atelfoto/sluggable/license.svg)](//packagist.org/packages/atelfoto/sluggable)
 [![Latest Stable Version](https://poser.pugx.org/atelfoto/sluggable/v/stable.svg)](//packagist.org/packages/atelfoto/sluggable)
 ![Packagist PHP Version Support (specify version)](https://img.shields.io/packagist/php-v/cakephp/cakephp/3.9.1?color=green&logo=cakephp)
@@ -18,7 +18,7 @@
 
 ## 1. Requirements
 
-- cakephp 4.x
+- cakephp 5.x
 
 ## 2. Installation
 
