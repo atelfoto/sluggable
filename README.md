@@ -3,7 +3,7 @@
 [![Build Status](https://api.travis-ci.com/atelfoto/sluggable.svg?branch=master)](https://travis-ci.org/atelfoto/sluggable)
 [![License](https://poser.pugx.org/atelfoto/sluggable/license.svg)](//packagist.org/packages/atelfoto/sluggable)
 [![Latest Stable Version](https://poser.pugx.org/atelfoto/sluggable/v/stable.svg)](//packagist.org/packages/atelfoto/sluggable)
-![Packagist PHP Version Support (specify version)](https://img.shields.io/packagist/php-v/cakephp/cakephp/4.1.1?color=green&logo=cakephp)
+![Packagist PHP Version Support (specify version)](https://img.shields.io/packagist/php-v/cakephp/cakephp/5.0.1?color=green&logo=cakephp)
 ![GitHub repo size](https://img.shields.io/github/repo-size/atelfoto/sluggable?color=red&logo=cakephp)
 [![Code Qualité](https://scrutinizer-ci.com/g/atelfoto/sluggable/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/atelfoto/sluggable/?branch=master)
 ![PHP Composer](https://github.com/atelfoto/sluggable/workflows/PHP%20Composer/badge.svg)
@@ -18,7 +18,7 @@
 
 ## 1. Requirements
 
-- cakephp 5.x
+- cakephp 5.x.x
 
 ## 2. Installation
 
